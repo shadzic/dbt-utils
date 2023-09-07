@@ -1,0 +1,8 @@
+# first debug
+dbt debug 
+# you might need to run the following command to load the environment variables that connect to the database & DBT_PROFILES_DIR
+# set -o allexport; source .env ; set +o allexport
+
+dbt deps
+dbt docs generate
+dbt docs serve
